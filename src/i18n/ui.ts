@@ -15,12 +15,13 @@ export const labels = {
 		"header.available": "Disponible",
 		"header.unavailable": "No disponible",
 		"header.busy": "Ocupado",
-		"header.p1": "Hola, soy",
-		"header.p2":
-			"Desarrollador web de 20 años apasionado por la tecnología y crear experiencias digitales modernas",
+		"header.p1": "Desarrollo interfaces y construyo experiencias",
+		"header.p2": "Soy Juan Pablo, diseñador y desarrollador web.",
 		"header.p3":
-			"Autodidacta, curioso y comprometido con el aprendizaje constante. Transformo ideas en interfaces claras y funcionales",
+			"Creo sitios modernos, responsive y funcionales combinando diseño y código.",
 		"header.cta": "Descargar CV",
+		"header.cta2": "Ver proyectos",
+		"header.cta3": "Contactarme",
 		// ------------------------------------------------
 
 		"services.title": "Mis servicios",
@@ -92,16 +93,16 @@ export const labels = {
 		"projects.more": "Mas proyectos",
 
 		"projects.1.description":
-			"Sirve para proporcionar información detallada sobre los servicios y espacios que ofrecen. Permite a los usuarios conocer los distintos tipos de espacios de trabajo disponibles, como oficinas privadas y espacios de coworking, así como los servicios adicionales como café y salas de reuniones.",
+			"Sitio web para presentar espacios de coworking, servicios y opciones de trabajo de forma clara y accesible",
 
 		"projects.2.description":
-			"La página del Colegio Técnico Profesional de Santo Domingo (CTP Santo Domingo) proporciona información sobre la visión, misión, valores, historia, y oferta educativa del colegio. Además, ofrece detalles sobre eventos, servicios, y datos de contacto, facilitando así la comunicación entre la institución y la comunidad.",
+			"Sitio web institucional diseñado para facilitar el acceso a información educativa, eventos y servicios del colegio.",
 
 		"projects.3.description":
-			"Es más que una simple página web, es un espacio donde la pasión por el crochet se transforma en arte en miniatura. Te invitamos a descubrir un universo tejido con amor, donde cada Amigurumi cobra vida con dedicación y cuidado.",
+			"Concepto de tienda digital para una marca artesanal, enfocado en presentar productos y facilitar el descubrimiento de la colección.",
 
 		"projects.4.description":
-			"La plataforma que te guiará por un Halloween sin igual. Explora una amplia gama de eventos, desde fiestas temáticas hasta casas embrujadas, filtra por categoría y ubicación para encontrar experiencias a tu medida. Obtén toda la información: fechas, precios, requisitos y detalles para una planificación perfecta.",
+			"Concepto de plataforma para descubrir eventos de Halloween mediante categorías, búsqueda y filtros.",
 
 		"projects.code": "Ver código",
 		"projects.preview": "Ver preview",

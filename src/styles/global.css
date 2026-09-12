@@ -2,9 +2,11 @@
 @import "aos/dist/aos.css";
 
 @theme {
-	--color-Purple: #7c3aed;
-	--color-DarkPurple: #2e1065;
+	--color-Background: #000;
+	--color-Purple: #f90303;
+	--color-DarkPurple: #d30906;
 	--color-Gray: #d9d9d9;
+	--color-White: #fff;
 
 	--font-Space: "Space Grotesk";
 	--font-Manrope: "Manrope";

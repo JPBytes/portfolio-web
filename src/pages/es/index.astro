@@ -31,10 +31,26 @@ const currentStatus = "Available";
 	>
 		<section class="flex flex-col">
 			<AvailabilityDot status={currentStatus} />
-			<p class="">{translatedLabels("header.p1")}</p>
-			<h1 class="text-Purple text-4xl font-bold">Juan Pablo</h1>
+			<h1 class="text-Purple text-3xl font-bold">
+				{translatedLabels("header.p1")}
+			</h1>
 			<p>{translatedLabels("header.p2")}</p>
 			<p>{translatedLabels("header.p3")}</p>
+
+			<div class="mt-4 flex gap-2">
+				<button
+					class="bg-Purple text-White hover:bg-DarkPurple dark:hover:text-Purple cursor-pointer rounded-lg p-2 hover:scale-90 hover:duration-300 dark:hover:bg-white"
+					type="button"
+					>{translatedLabels("header.cta2")}
+					<i class="fa-solid fa-arrow-down"></i></button
+				>
+				<button
+					class="bg-Purple text-White hover:bg-DarkPurple dark:hover:text-Purple cursor-pointer rounded-lg p-2 hover:scale-90 hover:duration-300 dark:hover:bg-white"
+					type="button"
+					>{translatedLabels("header.cta3")}
+					<i class="fa-solid fa-arrow-down"></i></button
+				>
+			</div>
 
 			<div class="mt-8 flex items-center gap-2">
 				<a
@@ -68,6 +84,7 @@ const currentStatus = "Available";
 				</div>
 			</div>
 		</section>
+
 		<section class="hidden items-center justify-end md:flex">
 			<Image
 				src={Logo}
@@ -77,6 +94,140 @@ const currentStatus = "Available";
 			/>
 		</section>
 	</header>
+
+	<section
+		class="mt-8"
+		id="Projects"
+		data-aos="fade-right"
+		data-aos-offset="200"
+		data-aos-duration="1500"
+		data-aos-easing="ease-in-out"
+		data-aos-delay="300"
+	>
+		<div class="flex justify-between">
+			<h5 class="flex items-center gap-2 text-2xl font-bold">
+				<i class="fa-solid fa-arrow-right"></i>{
+					translatedLabels("projects.title")
+				}
+			</h5>
+
+			<a
+				class="bg-Purple hover:bg-DarkPurple rounded-lg p-2 text-white hover:scale-90 hover:duration-300"
+				href={getRelativeLocaleUrl(currentLang, "/projects")}
+				><i class="fa-solid fa-plus"></i> {translatedLabels("projects.more")}</a
+			>
+		</div>
+
+		<div
+			class="mt-2 flex flex-col gap-16 md:grid md:grid-cols-2 lg:grid-cols-3"
+		>
+			<Project
+				title="Con-siente CoWorking"
+				src="/IMGS/Projects/Consiente.webp"
+				description={translatedLabels("projects.1.description")}
+				code="https://github.com/JPBuildsCode/Con-siente-Coworking"
+				preview="https://consiente-coworking.vercel.app/"
+				><div class="my-4 flex w-full justify-center gap-8">
+					<img
+						loading="lazy"
+						src="/ICONS/Code/Tailwindcss.svg"
+						alt="Icon TailwindCSS"
+						class="size-12"
+						title="Icon TailwindCSS"
+					/>
+					<img
+						loading="lazy"
+						src="/ICONS/Code/Astro.svg"
+						alt="Icon Astro"
+						class="size-12"
+						title="Icon Astro"
+					/>
+				</div>
+			</Project>
+
+			<Project
+				title="CTP Santo Domingo"
+				alt="CTP Santo Domingo"
+				src="/IMGS/Projects/CTPSD.webp"
+				description={translatedLabels("projects.2.description")}
+				code="https://github.com/JPBuildsCode/ctp-santodomingo"
+				preview="https://ctp-santodomingo.vercel.app/"
+				><div class="my-4 flex w-full justify-center gap-8">
+					<img
+						loading="lazy"
+						src="/ICONS/Code/Tailwindcss.svg"
+						alt="Icon TailwindCSS"
+						class="size-12"
+						title="Icon TailwindCSS"
+					/>
+					<img
+						loading="lazy"
+						src="/ICONS/Code/React.svg"
+						alt="Icon Astro"
+						class="size-12"
+						title="Icon Astro"
+					/>
+				</div></Project
+			>
+
+			<Project
+				title="Dela Flowers"
+				alt="Dela Flowers"
+				src="/IMGS/Projects/Dela-Flowers.webp"
+				description={translatedLabels("projects.3.description")}
+				code="https://github.com/JPBuildsCode/Dela-Flowers-New"
+				preview="https://dela-flowers.vercel.app/"
+				><div class="my-4 flex w-full justify-center gap-8">
+					<img
+						loading="lazy"
+						src="/ICONS/Code/React.svg"
+						alt="Icon React"
+						class="size-12"
+						title="Icon React"
+					/>
+					<img
+						loading="lazy"
+						src="/ICONS/Code/Astro.svg"
+						alt="Icon Astro"
+						class="size-12"
+						title="Icon Astro"
+					/>
+					<img
+						loading="lazy"
+						src="/ICONS/Code/Tailwindcss.svg"
+						alt="Icon TailwindCSS"
+						class="size-12"
+						title="Icon TailwindCSS"
+					/>
+				</div></Project
+			>
+
+			<Project
+				title="Spooky Fest"
+				alt="Spooky Fest"
+				src="/IMGS/Projects/Spooky-Fest.webp"
+				description={translatedLabels("projects.4.description")}
+				code="https://github.com/JPBuildsCode/Halloween-Festival"
+				preview="https://spookyfest.vercel.app/"
+				><div class="my-4 flex w-full justify-center gap-8">
+					<img
+						loading="lazy"
+						src="/ICONS/Code/SASS.svg"
+						alt="Icon SASS"
+						class="size-12"
+						title="Icon SASS"
+					/>
+					<img
+						loading="lazy"
+						src="/ICONS/Code/Astro.svg"
+						alt="Icon Astro"
+						class="size-12"
+						title="Icon Astro"
+					/>
+				</div></Project
+			>
+		</div>
+	</section>
 
 	<section
 		class="mt-8"
@@ -304,140 +455,6 @@ const currentStatus = "Available";
 					</div>
 				</article>
 			</Container>
-		</div>
-	</section>
-
-	<section
-		class="mt-8"
-		id="Projects"
-		data-aos="fade-right"
-		data-aos-offset="200"
-		data-aos-duration="1500"
-		data-aos-easing="ease-in-out"
-		data-aos-delay="300"
-	>
-		<div class="flex justify-between">
-			<h5 class="flex items-center gap-2 text-2xl font-bold">
-				<i class="fa-solid fa-arrow-right"></i>{
-					translatedLabels("projects.title")
-				}
-			</h5>
-
-			<a
-				class="bg-Purple hover:bg-DarkPurple rounded-lg p-2 text-white hover:scale-90 hover:duration-300"
-				href={getRelativeLocaleUrl(currentLang, "/projects")}
-				><i class="fa-solid fa-plus"></i> {translatedLabels("projects.more")}</a
-			>
-		</div>
-
-		<div
-			class="mt-2 flex flex-col gap-16 md:grid md:grid-cols-2 lg:grid-cols-3"
-		>
-			<Project
-				title="Con-siente CoWorking"
-				src="/IMGS/Projects/Consiente.webp"
-				description={translatedLabels("projects.1.description")}
-				code="https://github.com/JPBuildsCode/Con-siente-Coworking"
-				preview="https://consiente-coworking.vercel.app/"
-				><div class="my-4 flex w-full justify-center gap-8">
-					<img
-						loading="lazy"
-						src="/ICONS/Code/Tailwindcss.svg"
-						alt="Icon TailwindCSS"
-						class="size-12"
-						title="Icon TailwindCSS"
-					/>
-					<img
-						loading="lazy"
-						src="/ICONS/Code/Astro.svg"
-						alt="Icon Astro"
-						class="size-12"
-						title="Icon Astro"
-					/>
-				</div>
-			</Project>
-
-			<Project
-				title="CTP Santo Domingo"
-				alt="CTP Santo Domingo"
-				src="/IMGS/Projects/CTPSD.webp"
-				description={translatedLabels("projects.2.description")}
-				code="https://github.com/JPBuildsCode/ctp-santodomingo"
-				preview="https://ctp-santodomingo.vercel.app/"
-				><div class="my-4 flex w-full justify-center gap-8">
-					<img
-						loading="lazy"
-						src="/ICONS/Code/Tailwindcss.svg"
-						alt="Icon TailwindCSS"
-						class="size-12"
-						title="Icon TailwindCSS"
-					/>
-					<img
-						loading="lazy"
-						src="/ICONS/Code/React.svg"
-						alt="Icon Astro"
-						class="size-12"
-						title="Icon Astro"
-					/>
-				</div></Project
-			>
-
-			<Project
-				title="Dela Flowers"
-				alt="Dela Flowers"
-				src="/IMGS/Projects/Dela-Flowers.webp"
-				description={translatedLabels("projects.3.description")}
-				code="https://github.com/JPBuildsCode/Dela-Flowers-New"
-				preview="https://dela-flowers.vercel.app/"
-				><div class="my-4 flex w-full justify-center gap-8">
-					<img
-						loading="lazy"
-						src="/ICONS/Code/React.svg"
-						alt="Icon React"
-						class="size-12"
-						title="Icon React"
-					/>
-					<img
-						loading="lazy"
-						src="/ICONS/Code/Astro.svg"
-						alt="Icon Astro"
-						class="size-12"
-						title="Icon Astro"
-					/>
-					<img
-						loading="lazy"
-						src="/ICONS/Code/Tailwindcss.svg"
-						alt="Icon TailwindCSS"
-						class="size-12"
-						title="Icon TailwindCSS"
-					/>
-				</div></Project
-			>
-
-			<Project
-				title="Spooky Fest"
-				alt="Spooky Fest"
-				src="/IMGS/Projects/Spooky-Fest.webp"
-				description={translatedLabels("projects.4.description")}
-				code="https://github.com/JPBuildsCode/Halloween-Festival"
-				preview="https://spookyfest.vercel.app/"
-				><div class="my-4 flex w-full justify-center gap-8">
-					<img
-						loading="lazy"
-						src="/ICONS/Code/SASS.svg"
-						alt="Icon SASS"
-						class="size-12"
-						title="Icon SASS"
-					/>
-					<img
-						loading="lazy"
-						src="/ICONS/Code/Astro.svg"
-						alt="Icon Astro"
-						class="size-12"
-						title="Icon Astro"
-					/>
-				</div></Project
-			>
 		</div>
 	</section>
 
