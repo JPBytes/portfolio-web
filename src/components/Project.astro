@@ -9,36 +9,42 @@ const translatedLabels = useTranslations(
 ---
 
 <article
-	class="bg-DarkPurple/80 border-Purple dark:bg-DarkPurple flex flex-col gap-2 rounded-lg border-8 p-2 text-white dark:border-white"
+	class="bg-Background black:border-White dark:border-White border-Purple flex flex-col gap-2 rounded-lg border-4 p-6 text-white"
 >
+	<img
+		src={Astro.props.src}
+		alt={Astro.props.alt}
+		loading="lazy"
+	/>
+	<p class="bg-White text-Purple w-max rounded-lg p-2 text-xs">
+		{Astro.props.category}
+	</p>
 	<p class="font-bold uppercase">{Astro.props.title}</p>
+
 	<div class="flex h-full flex-col justify-between gap-2">
-		<img
-			src={Astro.props.src}
-			alt={Astro.props.alt}
-			loading="lazy"
-		/>
-		<hr class="w-full border-2" />
 		<p class="text-pretty hover:duration-300">{Astro.props.description}</p>
-		<hr class="w-full border-2" />
 
 		<div class="flex items-center gap-2">
 			<slot />
 		</div>
-		<div class="grid grid-cols-2 gap-2">
+		<div class="flex w-full gap-6">
 			<a
 				href={Astro.props.code}
 				target="_blank"
 				rel="noopener"
-				class="bg-Purple hover:text-Purple dark:text-Purple m-auto flex items-center gap-2 rounded-lg p-2 text-white hover:scale-90 hover:bg-white hover:duration-300 dark:bg-white"
-				><i class="fa-solid fa-code"></i>{translatedLabels("projects.code")}</a
+				class="bg-Background text-White border-Purple hover:bg-Purple flex w-full items-center gap-2 rounded-lg border-2 p-2 hover:scale-90 hover:duration-300"
+				><i class="fa-solid fa-code text-Purple"></i>{
+					translatedLabels("projects.code")
+				}</a
 			>
 			<a
 				href={Astro.props.preview}
 				target="_blank"
 				rel="noopener"
-				class="bg-DarkPurple hover:text-Purple m-auto flex items-center gap-2 rounded-lg p-2 text-white hover:scale-90 hover:bg-white hover:duration-300"
-				><i class="fa-solid fa-eye"></i>{translatedLabels("projects.preview")}
+				class="bg-Background text-White border-Purple hover:bg-Purple flex w-full items-center gap-2 rounded-lg border-2 p-2 hover:scale-90 hover:duration-300"
+				><i class="fa-solid fa-eye text-Purple"></i>{
+					translatedLabels("projects.preview")
+				}
 			</a>
 		</div>
 	</div>

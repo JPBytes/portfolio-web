@@ -3,6 +3,10 @@ import Layout from "../../layouts/Layout.astro";
 import Project from "../../components/Project.astro";
 import { useTranslations } from "../../i18n/utils";
 import { languagesList } from "../../i18n/ui";
+import Tailwindcss from "../../components/Tecnologias/Tailwindcss.astro";
+import ReactI from "../../components/Tecnologias/React.astro";
+import AstroI from "../../components/Tecnologias/Astro.astro";
+import SASS from "../../components/Tecnologias/SASS.astro";
 const currentLang = Astro.currentLocale || "es";
 
 const translatedLabels = useTranslations(
@@ -32,93 +36,61 @@ const translatedLabels = useTranslations(
 				{translatedLabels("knowledge.code.title")}
 			</h2>
 			<div
-				class="mt-2 flex flex-col gap-8 md:grid md:grid-cols-2 lg:grid-cols-3"
+				class="mt-2 flex flex-col gap-16 md:grid md:grid-cols-2 lg:grid-cols-3"
 			>
 				<Project
 					title="Con-siente CoWorking"
+					category={translatedLabels("projects.1.category")}
 					src="/IMGS/Projects/Consiente.webp"
 					description={translatedLabels("projects.1.description")}
 					code="https://github.com/JPBuildsCode/Con-siente-Coworking"
 					preview="https://consiente-coworking.vercel.app/"
 					><div class="my-4 flex w-full justify-center gap-8">
-						<img
-							src="/ICONS/Code/Tailwindcss.svg"
-							alt="Icon TailwindCSS"
-							class="size-12"
-							title="Icon TailwindCSS"
-						/>
-						<img
-							src="/ICONS/Code/Astro.svg"
-							alt="Icon Astro"
-							class="size-12"
-							title="Icon Astro"
-						/>
+						<Tailwindcss />
+						<AstroI />
 					</div>
 				</Project>
 
 				<Project
 					title="CTP Santo Domingo"
+					category={translatedLabels("projects.2.category")}
+					alt="CTP Santo Domingo"
 					src="/IMGS/Projects/CTPSD.webp"
 					description={translatedLabels("projects.2.description")}
 					code="https://github.com/JPBuildsCode/ctp-santodomingo"
 					preview="https://ctp-santodomingo.vercel.app/"
 					><div class="my-4 flex w-full justify-center gap-8">
-						<img
-							src="/ICONS/Code/Tailwindcss.svg"
-							alt="Icon TailwindCSS"
-							class="size-12"
-							title="Icon TailwindCSS"
-						/>
-						<img
-							src="/ICONS/Code/React.svg"
-							alt="Icon Astro"
-							class="size-12"
-							title="Icon Astro"
-						/>
+						<Tailwindcss />
+						<ReactI />
 					</div></Project
 				>
 
 				<Project
 					title="Dela Flowers"
+					category={translatedLabels("projects.3.category")}
+					alt="Dela Flowers"
 					src="/IMGS/Projects/Dela-Flowers.webp"
 					description={translatedLabels("projects.3.description")}
 					code="https://github.com/JPBuildsCode/Dela-Flowers-New"
 					preview="https://dela-flowers.vercel.app/"
 					><div class="my-4 flex w-full justify-center gap-8">
-						<img
-							src="/ICONS/Code/SASS.svg"
-							alt="Icon SASS"
-							class="size-12"
-							title="Icon SASS"
-						/>
-						<img
-							src="/ICONS/Code/Astro.svg"
-							alt="Icon Astro"
-							class="size-12"
-							title="Icon Astro"
-						/>
+						<Tailwindcss />
+						<AstroI />
+						<ReactI />
 					</div></Project
 				>
 
 				<Project
 					title="Spooky Fest"
+					category={translatedLabels("projects.4.category")}
+					alt="Spooky Fest"
 					src="/IMGS/Projects/Spooky-Fest.webp"
 					description={translatedLabels("projects.4.description")}
 					code="https://github.com/JPBuildsCode/Halloween-Festival"
 					preview="https://spookyfest.vercel.app/"
 					><div class="my-4 flex w-full justify-center gap-8">
-						<img
-							src="/ICONS/Code/SASS.svg"
-							alt="Icon SASS"
-							class="size-12"
-							title="Icon SASS"
-						/>
-						<img
-							src="/ICONS/Code/Astro.svg"
-							alt="Icon Astro"
-							class="size-12"
-							title="Icon Astro"
-						/>
+						<SASS />
+						<AstroI />
 					</div></Project
 				>
 			</div>

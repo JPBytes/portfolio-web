@@ -90,19 +90,32 @@ export const labels = {
 
 		// ------------------------------------------------
 		"projects.title": "Proyectos",
+		"projects.title2": "seleccionados",
 		"projects.more": "Mas proyectos",
+
+		// ------
 
 		"projects.1.description":
 			"Sitio web para presentar espacios de coworking, servicios y opciones de trabajo de forma clara y accesible",
+		"projects.1.category": "Landing Page · UI/UX",
+
+		// ------
 
 		"projects.2.description":
 			"Sitio web institucional diseñado para facilitar el acceso a información educativa, eventos y servicios del colegio.",
+		"projects.2.category": "Web institucional",
+
+		// ------
 
 		"projects.3.description":
 			"Concepto de tienda digital para una marca artesanal, enfocado en presentar productos y facilitar el descubrimiento de la colección.",
+		"projects.3.category": "E-commerce · UI/UX",
+
+		// ------
 
 		"projects.4.description":
 			"Concepto de plataforma para descubrir eventos de Halloween mediante categorías, búsqueda y filtros.",
+		"projects.4.category": "Descubrimíento de evento · UI/UX",
 
 		"projects.code": "Ver código",
 		"projects.preview": "Ver preview",
@@ -137,27 +150,34 @@ export const labels = {
 		"nav.projects": "Projects",
 		"nav.services": "Services",
 		"nav.contact": "Contact",
+
 		// ------------------------------------------------
+
 		"header.available": "Available",
 		"header.unavailable": "Unavailable",
 		"header.busy": "Busy",
-		"header.p1": "Hi, i'm",
-		"header.p2":
-			"20-year-old web developer passionate about technology and creating modern digital experiences",
+		"header.p1": "I design interfaces and build experiences",
+		"header.p2": "I'm Juan Pablo, a web designer and developer.",
 		"header.p3":
-			"Self-taught, curious, and committed to constant learning. I turn ideas into clear and functional interfaces.",
+			"I create modern, responsive, and functional websites by combining design and code.",
 		"header.cta": "Download CV",
+		"header.cta2": "View projects",
+		"header.cta3": "Contact me",
+
 		// ------------------------------------------------
+
 		"services.title": "My services",
+
 		// -----
+
 		"services.title-software": "Web development",
 		"services.software-service1-title": "Landing Page design and development:",
 		"services.software-service1-description":
 			"Landing pages designed and optimized for your customers.",
 
-		"services.software-service2-title": "Creation of informative web pages:",
+		"services.software-service2-title": "Informative website development:",
 		"services.software-service2-description":
-			"Sites that present your brand, business, service or project in a clear and professional way.",
+			"Websites that present your brand, business, service, or project in a clear and professional way.",
 
 		"services.software-service3-title": "Responsive design:",
 		"services.software-service3-description":
@@ -165,26 +185,28 @@ export const labels = {
 
 		"services.software-service4-title": "Intuitive user experience (UX):",
 		"services.software-service4-description":
-			"Simple and attractive navigation for your visitors .",
+			"Simple and engaging navigation for your visitors.",
 
 		// -------------------
 
-		"services.title-design": "Graphic Design",
+		"services.title-design": "Graphic design",
+
 		// -----
-		"services.design-service1-title": "Design of promotional materials:",
+
+		"services.design-service1-title": "Promotional material design:",
 		"services.design-service1-description":
 			"Posters and flyers that capture the attention of your audience.",
 
-		"services.design-service2-title": "Event graphics development:",
-		"services.design-service2-description": "From ads to visual programs.",
+		"services.design-service2-title": "Event graphic development:",
+		"services.design-service2-description":
+			"From advertisements to visual programs.",
 
-		"services.design-service3-title":
-			"Creation of graphic pieces for campaigns:",
+		"services.design-service3-title": "Graphic assets for campaigns:",
 		"services.design-service3-description":
-			"Suitable for print or digital media.",
+			"Adaptable for print or digital media.",
 
 		"services.design-service4-title":
-			"Clear and attractive visual communication:",
+			"Clear and engaging visual communication:",
 		"services.design-service4-description": "To make your message stand out.",
 
 		// ------------------------------------------------
@@ -193,41 +215,56 @@ export const labels = {
 		"experience.1.date": "September 2024",
 		"experience.1.place": "CTP Santo Domingo de Heredia",
 		"experience.1.description":
-			"Design, development, and implementation of a website for CTP Santo Domingo, facilitating the dissemination of key information (vision, mission, educational offerings) and optimizing community interaction",
+			"Design, development, and implementation of a website for CTP Santo Domingo, facilitating the dissemination of key information (vision, mission, and educational offerings) and optimizing interaction with the community.",
 
 		"experience.2.date": "2023",
 		"experience.2.place": "Freelance",
 		"experience.2.description":
-			"Design and development of custom websites for clients, along with the creation of content and graphic design for social media, ensuring digital solutions tailored to their specific needs.",
+			"Design and development of custom websites for clients, along with content creation and graphic design for social media, ensuring digital solutions tailored to their specific needs.",
 
 		"experience.3.date": "October 2025 - December 2025",
 		"experience.3.place": "Censolsa",
 		"experience.3.description":
-			"I designed and developed a web application for workshop team management, with income recording, repair tracking, and process traceability, optimizing information and improving decision-making efficiency.",
+			"I designed and developed a web application for workshop equipment management, including intake registration, repair tracking, and process traceability, optimizing information management and improving decision-making efficiency.",
 
 		// ------------------------------------------------
-		"knowledge.title": "Tools y technologies",
+
+		"knowledge.title": "Tools and technologies",
 		"knowledge.code.title": "Web development",
 		"knowledge.design.title": "Graphic design",
 
 		// ------------------------------------------------
+
 		"projects.title": "Projects",
+		"projects.title2": "selected",
 		"projects.more": "More projects",
 
+		// ------
+
 		"projects.1.description":
-			"It is used to provide detailed information about the services and spaces they offer. It allows users to learn about the different types of workspaces available, such as private offices and coworking spaces, as well as additional services like coffee and meeting rooms.",
+			"Website designed to present coworking spaces, services, and work options in a clear and accessible way.",
+		"projects.1.category": "Landing Page · UI/UX",
+
+		// ------
 
 		"projects.2.description":
-			"The website of the Santo Domingo Professional Technical School (CTP Santo Domingo) provides information about the school's vision, mission, values, history, and educational offerings. It also offers details about events, services, and contact information, thereby facilitating communication between the institution and the community.",
+			"Institutional website designed to provide easy access to educational information, events, and school services.",
+		"projects.2.category": "Institutional website",
+
+		// ------
 
 		"projects.3.description":
-			"It's more than just a website; it's a space where the passion for crochet transforms into miniature art. We invite you to discover a universe woven with love, where each Amigurumi comes to life with dedication and care.",
+			"Digital store concept for an artisan brand, focused on showcasing products and making it easy to explore the collection.",
+		"projects.3.category": "E-commerce · UI/UX",
+
+		// ------
 
 		"projects.4.description":
-			"The platform that will guide you through an unparalleled Halloween. Explore a wide range of events, from themed parties to haunted houses, filter by category and location to find experiences tailored to you. Get all the information: dates, prices, requirements, and details for perfect planning.",
+			"Platform concept for discovering Halloween events through categories, search, and filters.",
+		"projects.4.category": "Event discovery · UI/UX",
 
-		"projects.code": "See code",
-		"projects.preview": "See preview",
+		"projects.code": "View code",
+		"projects.preview": "View preview",
 
 		// ------------------------------------------------
 
@@ -243,10 +280,10 @@ export const labels = {
 		// ------------------------------------------------
 
 		"contactme.title": "Contact me",
-		"contactme.p1": "Let's talk for you",
+		"contactme.p1": "Let's talk about your",
 		"contactme.p1.span": "next projects",
 		"contactme.p2":
-			"I am available to take on new freelance projects, collaborations, and job opportunities. Please feel free to contact me to discuss how I can contribute to your professional goals.",
+			"I am available to take on new freelance projects, collaborations, and job opportunities. Feel free to contact me to discuss how I can contribute to your professional goals.",
 
 		"contactme.form.nombre": "Name",
 		"contactme.form.correo": "Email",
@@ -260,79 +297,125 @@ export const labels = {
 		"nav.projects": "Prosjekter",
 		"nav.services": "Tjenester",
 		"nav.contact": "Kontakt",
+
 		// ------------------------------------------------
+
 		"header.available": "Tilgjengelig",
 		"header.unavailable": "Ikke tilgjengelig",
-		"header.busy": "Okkupert",
-		"header.p1": "Hei, jeg er",
-		"header.p2":
-			"20 år gammel webutvikler med lidenskap for teknologi og moderne digitale opplevelser",
+		"header.busy": "Opptatt",
+		"header.p1": "Jeg designer grensesnitt og skaper opplevelser",
+		"header.p2": "Jeg er Juan Pablo, webdesigner og webutvikler.",
 		"header.p3":
-			"Selvlært, nysgjerrig og dedikert til kontinuerlig læring. Jeg gjør ideer om til klare og funksjonelle grensesnitt.",
+			"Jeg lager moderne, responsive og funksjonelle nettsteder ved å kombinere design og kode.",
 		"header.cta": "Last ned CV",
+		"header.cta2": "Se prosjekter",
+		"header.cta3": "Kontakt meg",
+
 		// ------------------------------------------------
+
 		"services.title": "Mine tjenester",
+
+		// -----
+
 		"services.title-software": "Webutvikling",
 		"services.software-service1-title": "Design og utvikling av landingssider:",
 		"services.software-service1-description":
 			"Landingssider designet og optimalisert for kundene dine.",
-		"services.software-service2-title": "Opprettelse av informative nettsider:",
+
+		"services.software-service2-title": "Utvikling av informative nettsteder:",
 		"services.software-service2-description":
-			"Nettsider som presenterer merkevaren, virksomheten, tjenesten eller prosjektet ditt på en klar og profesjonell måte.",
+			"Nettsteder som presenterer merkevaren, virksomheten, tjenesten eller prosjektet ditt på en tydelig og profesjonell måte.",
+
 		"services.software-service3-title": "Responsivt design:",
 		"services.software-service3-description":
-			"Perfekt tilpasning til alle enheter (telefoner, nettbrett, datamaskiner).",
+			"Perfekt tilpasning til alle enheter (telefoner, nettbrett og datamaskiner).",
+
 		"services.software-service4-title": "Intuitiv brukeropplevelse (UX):",
 		"services.software-service4-description":
-			"Enkel og attraktiv navigasjon for dine besøkende.",
+			"Enkel og engasjerende navigasjon for de besøkende dine.",
+
+		// -------------------
 
 		"services.title-design": "Grafisk design",
+
+		// -----
+
 		"services.design-service1-title": "Design av reklamemateriell:",
 		"services.design-service1-description":
-			"Plakater og flyers som fanger publikums oppmerksomhet.",
+			"Plakater og flyers som fanger oppmerksomheten til målgruppen din.",
+
 		"services.design-service2-title": "Grafisk utvikling for arrangementer:",
 		"services.design-service2-description":
 			"Fra annonser til visuelle programmer.",
-		"services.design-service3-title":
-			"Opprettelse av grafiske elementer for kampanjer:",
+
+		"services.design-service3-title": "Grafiske elementer for kampanjer:",
 		"services.design-service3-description":
-			"Egnet for trykte eller digitale medier.",
+			"Tilpasset for trykte eller digitale medier.",
+
 		"services.design-service4-title":
-			"Klar og attraktiv visuell kommunikasjon:",
+			"Tydelig og engasjerende visuell kommunikasjon:",
 		"services.design-service4-description":
 			"For å få budskapet ditt til å skille seg ut.",
+
 		// ------------------------------------------------
+
 		"experience.title": "Erfaring",
 		"experience.1.date": "September 2024",
 		"experience.1.place": "CTP Santo Domingo de Heredia",
 		"experience.1.description":
-			"Design, utvikling og implementering av en nettside for CTP Santo Domingo, som letter formidlingen av viktig informasjon (visjon, oppdrag, utdanningstilbud) og forbedrer samspillet med lokalsamfunnet.",
+			"Design, utvikling og implementering av et nettsted for CTP Santo Domingo, som gjør det enklere å formidle viktig informasjon (visjon, oppdrag og utdanningstilbud) og forbedrer samhandlingen med lokalsamfunnet.",
+
 		"experience.2.date": "2023",
 		"experience.2.place": "Frilans",
 		"experience.2.description":
-			"Design og utvikling av skreddersydde nettsider for kunder, samt innholdsproduksjon og grafisk design for sosiale medier, med digitale løsninger tilpasset deres behov.",
+			"Design og utvikling av skreddersydde nettsteder for kunder, samt innholdsproduksjon og grafisk design for sosiale medier, med digitale løsninger tilpasset deres spesifikke behov.",
+
 		"experience.3.date": "Oktober 2025 - Desember 2025",
 		"experience.3.place": "Censolsa",
 		"experience.3.description":
-			"Jeg designet og utviklet en webapplikasjon for verkstedstyring, med inntektsregistrering, reparasjonssporing og prosessoversikt, som forbedret informasjonsflyten og beslutningseffektiviteten.",
+			"Jeg designet og utviklet en webapplikasjon for administrasjon av verkstedutstyr, med registrering av innleveringer, reparasjonssporing og sporbarhet i prosessene, som forbedret informasjonsflyten og effektiviteten i beslutningstaking.",
+
 		// ------------------------------------------------
+
 		"knowledge.title": "Verktøy og teknologier",
 		"knowledge.code.title": "Webutvikling",
 		"knowledge.design.title": "Grafisk design",
+
 		// ------------------------------------------------
+
 		"projects.title": "Prosjekter",
+		"projects.title2": "utvalgte",
 		"projects.more": "Flere prosjekter",
+
+		// ------
+
 		"projects.1.description":
-			"Brukes til å gi detaljert informasjon om tjenestene og lokalene som tilbys. Lar brukere utforske ulike typer arbeidsområder som private kontorer og coworking, samt tilleggstjenester som kaffe og møterom.",
+			"Nettsted for å presentere coworking-områder, tjenester og arbeidsmuligheter på en tydelig og tilgjengelig måte.",
+		"projects.1.category": "Landing Page · UI/UX",
+
+		// ------
+
 		"projects.2.description":
-			"Nettsiden til CTP Santo Domingo gir informasjon om skolens visjon, oppdrag, verdier, historie og utdanningstilbud. Den tilbyr også detaljer om arrangementer, tjenester og kontaktinformasjon, og fremmer kommunikasjon med lokalsamfunnet.",
+			"Institusjonelt nettsted utviklet for å gjøre det enkelt å få tilgang til informasjon om utdanning, arrangementer og skolens tjenester.",
+		"projects.2.category": "Institusjonelt nettsted",
+
+		// ------
+
 		"projects.3.description":
-			"Det er mer enn bare en nettside; det er et sted der lidenskapen for hekling blir til miniatyrkunst. Vi inviterer deg til å oppdage et univers vevd med kjærlighet, der hver Amigurumi får liv med dedikasjon og omsorg.",
+			"Konsept for en digital butikk for et håndverksmerke, med fokus på å presentere produkter og gjøre det enkelt å utforske kolleksjonen.",
+		"projects.3.category": "E-handel · UI/UX",
+
+		// ------
+
 		"projects.4.description":
-			"Plattformen som guider deg gjennom en uforglemmelig Halloween. Utforsk et bredt utvalg av arrangementer, fra temafester til hjemsøkte hus, filtrer etter kategori og sted for å finne opplevelser som passer deg. Få all informasjon: datoer, priser, krav og detaljer for perfekt planlegging.",
+			"Konsept for en plattform for å oppdage Halloween-arrangementer gjennom kategorier, søk og filtre.",
+		"projects.4.category": "Arrangementoppdagelse · UI/UX",
+
 		"projects.code": "Se kode",
 		"projects.preview": "Se forhåndsvisning",
+
 		// ------------------------------------------------
+
 		"project.graphic.1": "/IMGS/Projects/Graphic/NO/Comida1.webp",
 		"project.graphic.2": "/IMGS/Projects/Graphic/NO/Comida2.webp",
 		"project.graphic.3": "/IMGS/Projects/Graphic/NO/Produkter1.webp",
@@ -341,12 +424,15 @@ export const labels = {
 		"project.graphic.6": "/IMGS/Projects/Graphic/NO/TEKNOLOGI2.webp",
 		"project.graphic.7": "/IMGS/Projects/Graphic/NO/TEKNOLOGI3.webp",
 		"project.graphic.8": "/IMGS/Projects/Graphic/NO/TEKNOLOGI4.webp",
+
 		// ------------------------------------------------
+
 		"contactme.title": "Kontakt meg",
 		"contactme.p1": "La oss snakke om dine",
 		"contactme.p1.span": "kommende prosjekter",
 		"contactme.p2":
-			"Jeg er tilgjengelig for nye frilansprosjekter, samarbeid og jobbmuligheter. Ta gjerne kontakt for å diskutere hvordan jeg kan bidra til dine mål.",
+			"Jeg er tilgjengelig for nye frilansprosjekter, samarbeid og jobbmuligheter. Ta gjerne kontakt for å diskutere hvordan jeg kan bidra til dine profesjonelle mål.",
+
 		"contactme.form.nombre": "Navn",
 		"contactme.form.correo": "E-post",
 		"contactme.form.asunto": "Emne",

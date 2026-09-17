@@ -17,7 +17,7 @@ const currentPath = Astro.url.pathname.replace(/^\/(es|en|nb)/, "") || "/";
 	const Navbar = document.getElementById("Navbar");
 
 	window.addEventListener("scroll", () => {
-		if (window.scrollY > 20) {
+		if (window.scrollY > 70) {
 			Navbar?.classList.add(
 				"border-b-Purple",
 				"dark:border-b-white",
@@ -27,7 +27,14 @@ const currentPath = Astro.url.pathname.replace(/^\/(es|en|nb)/, "") || "/";
 				"dark:bg-DarkPurple/70",
 			);
 		} else {
-			Navbar?.classList.remove("border-b-Purple", "border-b-4");
+			Navbar?.classList.remove(
+				"border-b-Purple",
+				"dark:border-b-white",
+				"border-b-4",
+				"backdrop-blur-md",
+				"bg-white/70",
+				"dark:bg-DarkPurple/70",
+			);
 		}
 	});
 

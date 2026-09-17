@@ -9,6 +9,10 @@ import { languagesList } from "../../i18n/ui";
 import Logo from "../../assets/Logo.png";
 import Image from "astro/components/Image.astro";
 import AvailabilityDot from "../../components/AvailabilityDot.astro";
+import Tailwindcss from "../../components/Tecnologias/Tailwindcss.astro";
+import ReactI from "../../components/Tecnologias/React.astro";
+import AstroI from "../../components/Tecnologias/Astro.astro";
+import SASS from "../../components/Tecnologias/SASS.astro";
 
 const currentLang = Astro.currentLocale || "es";
 
@@ -31,16 +35,36 @@ const currentStatus = "Available";
 	>
 		<section class="flex flex-col">
 			<AvailabilityDot status={currentStatus} />
-			<p class="">{translatedLabels("header.p1")}</p>
-			<h1 class="text-Purple text-4xl font-bold">Juan Pablo</h1>
+			<h1 class="text-Purple text-3xl font-bold">
+				{translatedLabels("header.p1")}
+			</h1>
 			<p>{translatedLabels("header.p2")}</p>
 			<p>{translatedLabels("header.p3")}</p>
+
+			<div class="mt-4 flex gap-2">
+				<a
+					href={Astro.url.pathname === `/${currentLang}/`
+						? "#Projects"
+						: getRelativeLocaleUrl(currentLang, "/#Projects")}
+					class="bg-Purple text-White hover:bg-DarkPurple dark:hover:text-Purple cursor-pointer rounded-lg p-2 hover:scale-90 hover:duration-300 dark:hover:bg-white"
+					>{translatedLabels("header.cta2")}
+					<i class="fa-solid fa-arrow-down"></i></a
+				>
+				<a
+					href={Astro.url.pathname === `/${currentLang}/`
+						? "#Contact-me"
+						: getRelativeLocaleUrl(currentLang, "/#Projects")}
+					class="bg-Purple text-White hover:bg-DarkPurple dark:hover:text-Purple cursor-pointer rounded-lg p-2 hover:scale-90 hover:duration-300 dark:hover:bg-white"
+					>{translatedLabels("header.cta3")}
+					<i class="fa-solid fa-arrow-down"></i></a
+				>
+			</div>
 
 			<div class="mt-8 flex items-center gap-2">
 				<a
 					class="bg-Purple hover:bg-DarkPurple dark:hover:text-Purple flex cursor-pointer items-center gap-2 rounded-lg px-2 py-1 text-white hover:scale-90 hover:duration-300 dark:hover:bg-white"
-					href=`/CV/CV-EN_JUAN-PABLO-GARCIA.docx`
-					download=`CV-EN_JUAN-PABLO-GARCIA.docx`
+					href=`/CV/CV-${currentLang.toUpperCase()}_JUAN-PABLO-GARCIA.docx`
+					download=`CV-${currentLang.toUpperCase()}_JUAN-PABLO-GARCIA.docx`
 					><i class="fa-solid fa-download"></i>{
 						translatedLabels("header.cta")
 					}</a
@@ -68,6 +92,7 @@ const currentStatus = "Available";
 				</div>
 			</div>
 		</section>
+
 		<section class="hidden items-center justify-end md:flex">
 			<Image
 				src={Logo}
@@ -77,6 +102,91 @@ const currentStatus = "Available";
 			/>
 		</section>
 	</header>
+
+	<section
+		class="mt-8"
+		id="Projects"
+		data-aos="fade-right"
+		data-aos-offset="200"
+		data-aos-duration="1500"
+		data-aos-easing="ease-in-out"
+		data-aos-delay="300"
+	>
+		<div class="flex justify-between">
+			<h5 class="flex items-center gap-2 text-2xl font-bold">
+				<i class="fa-solid fa-arrow-right"></i><p>
+					{translatedLabels("projects.title")}
+				</p>
+				<p class="text-Purple">{translatedLabels("projects.title2")}</p>
+			</h5>
+
+			<a
+				class="bg-Purple hover:bg-DarkPurple rounded-lg p-2 text-white hover:scale-90 hover:duration-300"
+				href={getRelativeLocaleUrl(currentLang, "/projects")}
+				><i class="fa-solid fa-plus"></i> {translatedLabels("projects.more")}</a
+			>
+		</div>
+
+		<div
+			class="mt-2 flex flex-col gap-16 md:grid md:grid-cols-2 lg:grid-cols-3"
+		>
+			<Project
+				title="Con-siente CoWorking"
+				category={translatedLabels("projects.1.category")}
+				src="/IMGS/Projects/Consiente.webp"
+				description={translatedLabels("projects.1.description")}
+				code="https://github.com/JPBuildsCode/Con-siente-Coworking"
+				preview="https://consiente-coworking.vercel.app/"
+				><div class="my-4 flex w-full justify-center gap-8">
+					<Tailwindcss />
+					<AstroI />
+				</div>
+			</Project>
+
+			<Project
+				title="CTP Santo Domingo"
+				category={translatedLabels("projects.2.category")}
+				alt="CTP Santo Domingo"
+				src="/IMGS/Projects/CTPSD.webp"
+				description={translatedLabels("projects.2.description")}
+				code="https://github.com/JPBuildsCode/ctp-santodomingo"
+				preview="https://ctp-santodomingo.vercel.app/"
+				><div class="my-4 flex w-full justify-center gap-8">
+					<Tailwindcss />
+					<ReactI />
+				</div></Project
+			>
+
+			<Project
+				title="Dela Flowers"
+				category={translatedLabels("projects.3.category")}
+				alt="Dela Flowers"
+				src="/IMGS/Projects/Dela-Flowers.webp"
+				description={translatedLabels("projects.3.description")}
+				code="https://github.com/JPBuildsCode/Dela-Flowers-New"
+				preview="https://dela-flowers.vercel.app/"
+				><div class="my-4 flex w-full justify-center gap-8">
+					<Tailwindcss />
+					<AstroI />
+					<ReactI />
+				</div></Project
+			>
+
+			<Project
+				title="Spooky Fest"
+				category={translatedLabels("projects.4.category")}
+				alt="Spooky Fest"
+				src="/IMGS/Projects/Spooky-Fest.webp"
+				description={translatedLabels("projects.4.description")}
+				code="https://github.com/JPBuildsCode/Halloween-Festival"
+				preview="https://spookyfest.vercel.app/"
+				><div class="my-4 flex w-full justify-center gap-8">
+					<SASS />
+					<AstroI />
+				</div></Project
+			>
+		</div>
+	</section>
 
 	<section
 		class="mt-8"
@@ -309,140 +419,6 @@ const currentStatus = "Available";
 
 	<section
 		class="mt-8"
-		id="Projects"
-		data-aos="fade-right"
-		data-aos-offset="200"
-		data-aos-duration="1500"
-		data-aos-easing="ease-in-out"
-		data-aos-delay="300"
-	>
-		<div class="flex justify-between">
-			<h5 class="flex items-center gap-2 text-2xl font-bold">
-				<i class="fa-solid fa-arrow-right"></i>{
-					translatedLabels("projects.title")
-				}
-			</h5>
-
-			<a
-				class="bg-Purple hover:bg-DarkPurple rounded-lg p-2 text-white hover:scale-90 hover:duration-300"
-				href={getRelativeLocaleUrl(currentLang, "/projects")}
-				><i class="fa-solid fa-plus"></i> {translatedLabels("projects.more")}</a
-			>
-		</div>
-
-		<div
-			class="mt-2 flex flex-col gap-16 md:grid md:grid-cols-2 lg:grid-cols-3"
-		>
-			<Project
-				title="Con-siente CoWorking"
-				src="/IMGS/Projects/Consiente.webp"
-				description={translatedLabels("projects.1.description")}
-				code="https://github.com/JPBuildsCode/Con-siente-Coworking"
-				preview="https://consiente-coworking.vercel.app/"
-				><div class="my-4 flex w-full justify-center gap-8">
-					<img
-						loading="lazy"
-						src="/ICONS/Code/Tailwindcss.svg"
-						alt="Icon TailwindCSS"
-						class="size-12"
-						title="Icon TailwindCSS"
-					/>
-					<img
-						loading="lazy"
-						src="/ICONS/Code/Astro.svg"
-						alt="Icon Astro"
-						class="size-12"
-						title="Icon Astro"
-					/>
-				</div>
-			</Project>
-
-			<Project
-				title="CTP Santo Domingo"
-				alt="CTP Santo Domingo"
-				src="/IMGS/Projects/CTPSD.webp"
-				description={translatedLabels("projects.2.description")}
-				code="https://github.com/JPBuildsCode/ctp-santodomingo"
-				preview="https://ctp-santodomingo.vercel.app/"
-				><div class="my-4 flex w-full justify-center gap-8">
-					<img
-						loading="lazy"
-						src="/ICONS/Code/Tailwindcss.svg"
-						alt="Icon TailwindCSS"
-						class="size-12"
-						title="Icon TailwindCSS"
-					/>
-					<img
-						loading="lazy"
-						src="/ICONS/Code/React.svg"
-						alt="Icon Astro"
-						class="size-12"
-						title="Icon Astro"
-					/>
-				</div></Project
-			>
-
-			<Project
-				title="Dela Flowers"
-				alt="Dela Flowers"
-				src="/IMGS/Projects/Dela-Flowers.webp"
-				description={translatedLabels("projects.3.description")}
-				code="https://github.com/JPBuildsCode/Dela-Flowers-New"
-				preview="https://dela-flowers.vercel.app/"
-				><div class="my-4 flex w-full justify-center gap-8">
-					<img
-						loading="lazy"
-						src="/ICONS/Code/React.svg"
-						alt="Icon React"
-						class="size-12"
-						title="Icon React"
-					/>
-					<img
-						loading="lazy"
-						src="/ICONS/Code/Astro.svg"
-						alt="Icon Astro"
-						class="size-12"
-						title="Icon Astro"
-					/>
-					<img
-						loading="lazy"
-						src="/ICONS/Code/Tailwindcss.svg"
-						alt="Icon TailwindCSS"
-						class="size-12"
-						title="Icon TailwindCSS"
-					/>
-				</div></Project
-			>
-
-			<Project
-				title="Spooky Fest"
-				alt="Spooky Fest"
-				src="/IMGS/Projects/Spooky-Fest.webp"
-				description={translatedLabels("projects.4.description")}
-				code="https://github.com/JPBuildsCode/Halloween-Festival"
-				preview="https://spookyfest.vercel.app/"
-				><div class="my-4 flex w-full justify-center gap-8">
-					<img
-						loading="lazy"
-						src="/ICONS/Code/SASS.svg"
-						alt="Icon SASS"
-						class="size-12"
-						title="Icon SASS"
-					/>
-					<img
-						loading="lazy"
-						src="/ICONS/Code/Astro.svg"
-						alt="Icon Astro"
-						class="size-12"
-						title="Icon Astro"
-					/>
-				</div></Project
-			>
-		</div>
-	</section>
-
-	<section
-		class="mt-8"
 		data-aos="fade-left"
 		data-aos-offset="200"
 		data-aos-duration="1500"
@@ -470,7 +446,7 @@ const currentStatus = "Available";
 				<div class="flex flex-col">
 					<label for="name">Nombre</label>
 					<div
-						class="bg-DarkPurple dark:text-Purple flex items-center gap-2 rounded-lg p-2 text-white dark:bg-white"
+						class="bg-Background flex items-center gap-2 rounded-lg p-2 text-white dark:bg-white dark:text-black"
 					>
 						<i class="fa-solid fa-user"></i>
 						<input
@@ -486,7 +462,7 @@ const currentStatus = "Available";
 				<div class="flex flex-col">
 					<label for="email">{translatedLabels("contactme.form.correo")}</label>
 					<div
-						class="bg-DarkPurple dark:text-Purple flex items-center gap-2 rounded-lg p-2 text-white dark:bg-white"
+						class="bg-Background flex items-center gap-2 rounded-lg p-2 text-white dark:bg-white dark:text-black"
 					>
 						<i class="fa-solid fa-envelope"></i>
 						<input
@@ -504,7 +480,7 @@ const currentStatus = "Available";
 						>{translatedLabels("contactme.form.asunto")}</label
 					>
 					<div
-						class="bg-DarkPurple dark:text-Purple flex items-center gap-2 rounded-lg p-2 text-white dark:bg-white"
+						class="bg-Background flex items-center gap-2 rounded-lg p-2 text-white dark:bg-white dark:text-black"
 					>
 						<i class="fa-solid fa-tag"></i>
 						<input
@@ -521,7 +497,7 @@ const currentStatus = "Available";
 						>{translatedLabels("contactme.form.mensaje")}</label
 					>
 					<div
-						class="bg-DarkPurple dark:text-Purple flex items-center gap-2 rounded-lg p-2 text-white dark:bg-white"
+						class="bg-Background flex items-center gap-2 rounded-lg p-2 text-white dark:bg-white dark:text-black"
 					>
 						<i class="fa-solid fa-message"></i>
 
@@ -542,7 +518,7 @@ const currentStatus = "Available";
 				<div class="flex justify-end">
 					<button
 						type="submit"
-						class="bg-Purple hover:text-Purple flex w-max cursor-pointer items-center justify-center gap-2 rounded-lg p-2 text-white hover:scale-90 hover:bg-white hover:duration-300"
+						class="bg-Purple hover:text-White dark:hover:text-Purple hover:bg-DarkPurple flex w-max cursor-pointer items-center justify-center gap-2 rounded-lg p-2 text-white hover:scale-90 hover:duration-300 dark:hover:bg-white"
 						><i class="fa-solid fa-paper-plane"></i>
 						{translatedLabels("contactme.form.enviar")}</button
 					>
