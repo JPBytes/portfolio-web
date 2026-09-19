@@ -27,13 +27,13 @@ const translatedLabels = useTranslations(
 		<div class="flex items-center gap-2">
 			<slot />
 		</div>
-		<div class="flex w-full gap-6">
+		<div class="flex w-full gap-6 flex-wrap">
 			<a
 				href={Astro.props.code}
 				target="_blank"
 				rel="noopener"
-				class="bg-Background text-White border-Purple hover:bg-Purple flex w-full items-center gap-2 rounded-lg border-2 p-2 hover:scale-90 hover:duration-300"
-				><i class="fa-solid fa-code text-Purple"></i>{
+				class="bg-Background text-White border-Purple hover:bg-Purple group flex w-full items-center gap-2 rounded-lg border-2 p-2 hover:scale-90 hover:duration-300"
+				><i class="fa-solid fa-code text-Purple group-hover:text-White"></i>{
 					translatedLabels("projects.code")
 				}</a
 			>
@@ -41,8 +41,8 @@ const translatedLabels = useTranslations(
 				href={Astro.props.preview}
 				target="_blank"
 				rel="noopener"
-				class="bg-Background text-White border-Purple hover:bg-Purple flex w-full items-center gap-2 rounded-lg border-2 p-2 hover:scale-90 hover:duration-300"
-				><i class="fa-solid fa-eye text-Purple"></i>{
+				class="bg-Background text-White border-Purple hover:bg-Purple group flex w-full items-center gap-2 rounded-lg border-2 p-2 hover:scale-90 hover:duration-300"
+				><i class="fa-solid fa-eye text-Purple group-hover:text-White"></i>{
 					translatedLabels("projects.preview")
 				}
 			</a>

@@ -11,6 +11,10 @@ export const labels = {
 		"nav.projects": "Proyectos",
 		"nav.services": "Servicios",
 		"nav.contact": "Contacto",
+		"nav.ocupattion": "Diseñador y desarrollador",
+		"nav.language.title": "Idioma",
+		"nav.cv.download.title": "Descargar CV",
+
 		// ------------------------------------------------
 		"header.available": "Disponible",
 		"header.unavailable": "No disponible",
@@ -150,6 +154,9 @@ export const labels = {
 		"nav.projects": "Projects",
 		"nav.services": "Services",
 		"nav.contact": "Contact",
+		"nav.ocupattion": "Designer and developer",
+		"nav.language.title": "Language",
+		"nav.cv.download.title": "Download CV",
 
 		// ------------------------------------------------
 
@@ -297,6 +304,9 @@ export const labels = {
 		"nav.projects": "Prosjekter",
 		"nav.services": "Tjenester",
 		"nav.contact": "Kontakt",
+		"nav.ocupattion": "Designer og utvikler",
+		"nav.language.title": "Språk",
+		"nav.cv.download.title": "Last ned CV",
 
 		// ------------------------------------------------
 
