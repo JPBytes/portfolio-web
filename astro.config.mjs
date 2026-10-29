@@ -12,7 +12,7 @@ export default defineConfig({
 	integrations: [react()],
 
 	i18n: {
-		defaultLocale: "es",
+		defaultLocale: "en",
 
 		locales: ["es", "en", "nb"],
 		routing: {
