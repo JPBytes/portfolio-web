@@ -1,7 +1,7 @@
 export const languagesList = {
 	es: "Español",
 	en: "English",
-	nb: "Norway",
+	nb: "Norwegian",
 };
 
 export const labels = {
