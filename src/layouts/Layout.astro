@@ -5,7 +5,7 @@ import Footer from "../components/Footer.astro";
 import AOSInit from "../components/AOSInit.tsx";
 ---
 
-<script>
+<script is:inline>
 	const Theme = localStorage.getItem("theme");
 	document.documentElement.classList.toggle("dark", Theme === "dark");
 </script>
@@ -32,22 +32,27 @@ import AOSInit from "../components/AOSInit.tsx";
 		/>
 		<link
 			rel="preconnect"
-			href="https://fonts.gstatic.com"
+			href="https://gstatic.com"
 			crossorigin
 		/>
+
 		<link
+			rel="preload"
+			as="style"
 			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
+		/>
+
+		<link
 			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
+			media="print"
+			onload="this.media='all'"
 		/>
 
 		<meta
 			name="generator"
 			content={Astro.generator}
 		/>
-		<script
-			src="https://kit.fontawesome.com/caac178fdb.js"
-			crossorigin="anonymous"
-		></script>
 
 		<title>Juan Pablo Portfolio</title>
 	</head>
@@ -59,6 +64,12 @@ import AOSInit from "../components/AOSInit.tsx";
 			<slot />
 		</main>
 		<Footer />
+
+		<script
+			src="https://kit.fontawesome.com/caac178fdb.js"
+			crossorigin="anonymous"
+			defer
+		></script>
 		<AOSInit client:only="react" />
 	</body>
 </html>

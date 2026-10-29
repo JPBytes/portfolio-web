@@ -22,7 +22,7 @@
 	},
 	"devDependencies": {
 		"@types/aos": "^3.0.7",
-		"prettier": "^3.7.4",
+		"prettier": "^3.9.10",
 		"prettier-plugin-astro": "^0.14.1",
 		"prettier-plugin-tailwindcss": "^0.7.2"
 	}
