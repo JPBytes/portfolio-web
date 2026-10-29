@@ -1,6 +1,6 @@
 import { labels } from "./ui";
 
-const defaultLang = "es";
+const defaultLang = "en";
 
 export function useTranslations(lang: keyof typeof labels) {
 	return function t(key: keyof (typeof labels)[typeof defaultLang]) {
